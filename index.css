@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -25,6 +24,11 @@
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    
+     --btn-bg-color-top: #137262;
+     --btn-bg-color-btm: #16e0bd;
+    
+  
 }
 
 @media (min-width: 800px) {
@@ -38,7 +42,6 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
 /* html {
     scroll-behavior: smooth;
 } */
@@ -418,6 +421,30 @@ header {
     transform: scale(1.2);
     opacity: .5;
 }
+.pushable {
+    background: var(--btn-bg-color-top);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    padding-top: .5rem;
+    
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.45rem;
+    text-align: center;
+    background: var(--btn-bg-color-btm);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
 
 
 /* footer */
