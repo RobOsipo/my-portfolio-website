@@ -515,6 +515,11 @@ header {
     text-decoration: none;
     color: black;
     font-weight: 1000;
+    font-size: 2rem;
+}
+
+.icgw:hover {
+    color: var(--clr-accent);
 }
 
 .aca-pic{
